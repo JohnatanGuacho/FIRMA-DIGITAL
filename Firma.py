@@ -6,7 +6,7 @@ import win32clipboard
 import os
 entidad = "JG SecureTech"
 
-# --- CONFIGURACIÓN ---
+
 fondo_transparente = True  # ← cambia esto a True si quieres fondo transparente
 copiar_portapapeles = True  # ← si quieres que se copie al portapapeles
 
@@ -16,17 +16,12 @@ apellido = "Tu apellido"
 email = "tu email"
 
 
-
-
-
 fecha = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
 qr_datos = f"""Firmado por: {nombre} {apellido}
 Fecha: {fecha}
 Entidad: {entidad}
 E-mail: {email}"""
 
-# --- GENERAR QR ---
 qr = qrcode.QRCode(
     version=1,
     error_correction=qrcode.constants.ERROR_CORRECT_Q,
@@ -37,7 +32,6 @@ qr.add_data(qr_datos)
 qr.make(fit=True)
 qr_img = qr.make_image(fill_color="black", back_color="white").convert("RGBA")
 
-# --- APLICAR DEGRADADO (verde a negro de izquierda a derecha) ---
 width, height = qr_img.size
 pixels = qr_img.load()
 for x in range(width):
@@ -77,7 +71,6 @@ for linea in texto:
     draw.text((x_text, y_text), linea, font=fuente, fill="black")
     y_text += 22
 
-# --- GUARDAR SELLO PNG ---
 # --- GUARDAR SELLO PNG ---
 import os
 
