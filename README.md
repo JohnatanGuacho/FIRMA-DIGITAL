@@ -2,6 +2,18 @@
 > **Generador de Sello Electrónico con Código QR**  
 > Firma visual, con estilo. Para tus scripts, tus docs y tu portafolio.
 
+# 🖋️ Generador de Sello Electrónico con QR
+
+```text
+   _____      _     _             __                 _     
+  / ____|    | |   (_)           / _|               | |    
+ | (___   ___| |__  _ _ __ ___  | |_ ___  _ __   ___| |__  
+  \___ \ / __| '_ \| | '__/ _ \ |  _/ _ \| '_ \ / __| '_ \ 
+  ____) | (__| | | | | | |  __/ | || (_) | | | | (__| | | |
+ |_____/ \___|_| |_|_|_|  \___| |_| \___/|_| |_|\___|_| |_|
+                                                          
+
+
 ✨ ¿Qué hace?
 Este script en Python genera un **sello digital elegante** con:
 ✅ Código QR con tus datos
