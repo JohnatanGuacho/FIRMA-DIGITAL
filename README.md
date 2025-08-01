@@ -27,7 +27,7 @@ python 3.10
 pip install qrcode pillow pywin32
 
 🚀 Uso Rápido
-python generar_sello.py
+python Firma.py
 Salida: sello_firma.png
 También se copia al portapapeles si activaste la opción.
 
